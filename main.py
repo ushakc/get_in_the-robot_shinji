@@ -3,7 +3,7 @@ def list_of_dictionaries_to_dicitonary_of_lists(pilot_tests):
     dictionary_of_results = {}
 
     for sync_test in pilot_tests:
-        for [pilot, unit] in sync_test.items():
+        for pilot, unit in sync_test.items():
             # check to see if that pilot is in the final dictionary
             if pilot in dictionary_of_results:
                 # get a reference to the set of compatible units and add one
@@ -38,10 +38,12 @@ syncTest3 = {
 pilotTests = [syncTest1, syncTest2, syncTest3]
 for test in pilotTests:
     print("\n Sync Test:")
-    for [pilot, unit] in test.items():
+    for pilot, unit in test.items():
         print("{pilot} can sync with {unit}".format(pilot=pilot, unit=unit))
 
 print("\n Results:")
+# combine tests using above function
 results = list_of_dictionaries_to_dicitonary_of_lists(pilotTests)
-for [pilot, compatible_evas] in results.items():
+# display results
+for pilot, compatible_evas in results.items():
     print(pilot + " Syncs with: " + str(compatible_evas))
