@@ -17,7 +17,7 @@ syncTest2 = {};
 syncTest2["Asuka"] = "Eva-02";
 syncTest2["Shinji"] = "Eva-01";
 # create third dictionary object, add 3 key-value pairs
-# we can also it as a literal
+# we can also create it as a literal
 syncTest3 = {
     "Shinji": "Eva-00",
     "Rei": "Eva-01",
