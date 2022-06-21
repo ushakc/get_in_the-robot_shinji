@@ -5,7 +5,9 @@
   * Dictionaries and lists
   
 
-* **Description** - Complete the function which takes in a list of dictionaries and returns a dictionary of sets 
+* **Description** - Complete the function which takes in a list of dictionaries and returns a dictionary of sets. 
+* Each entry of the input list is a dictionary that represents a Sync Test of each Pilot being able to synchronize with a mecha robot _(Evas from the anime Neon Genesis Evangelion)_ ,  the list is a list of all the Sync Tests
+* The output dictionary should be entries consisting of a pilot as key with value to a Set (no duplicates) of that pilots compatible Evas from every Sync Test 
 
 
 
